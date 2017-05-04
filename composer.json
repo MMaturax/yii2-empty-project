@@ -1,5 +1,5 @@
 {
-    "name": "YiiEmpty Project",
+    "name": "YiiEmptyProject",
     "description": "Yii 2 Basic Project Template",
     "keywords": ["yii2", "framework", "basic", "project template"],
     "homepage": "http://www.yiiframework.com/",
@@ -19,8 +19,6 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "richardfan1126/yii2-js-register": "*",
-        "reza-id/yii2-geopoint": "*",
-        "sjaakp/yii2-spatial": "*",
         "tpmanc/yii2-imagick": "*"
     },
     "require-dev": {
