@@ -1,0 +1,84 @@
+@mixin centered() {
+  max-width: $text_box_width;
+  margin: auto;
+}
+
+@mixin centered-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include translate(-50%, -50%);
+}
+
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+
+@mixin clearfix2() {
+  zoom: 1; // For IE 6/7 (trigger hasLayout)
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin make-frame($color,$border-width) {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: $border-width solid $color;
+
+  .corner {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: $border-width solid $color;
+    @include border-radius(30px);
+    position: absolute;
+    z-index: 1;
+  }
+  .top-line {
+    position: absolute;
+    left: -$border-width;
+    top: -$border-width;
+    right: -$border-width;
+    height: 20px;
+    overflow: hidden;
+  }
+  .bottom-line {
+    position: absolute;
+    left: -$border-width;
+    right: -$border-width;
+    bottom: -$border-width;
+    height: 20px;
+    overflow: hidden;
+  }
+  .top-left {
+    left: -20px;
+    top: -20px;
+  }
+  .top-right {
+    right: -20px;
+    top: -20px;
+  }
+  .bottom-left {
+    left: -20px;
+    bottom: -20px;
+  }
+  .bottom-right {
+    right: -20px;
+    bottom: -20px;
+  }
+
+}

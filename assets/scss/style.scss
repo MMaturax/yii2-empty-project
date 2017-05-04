@@ -1,0 +1,51 @@
+// Screen
+// ======
+$mq-breakpoints: (
+        mobile: 320px,
+        tablet: 740px,
+        desktop: 980px,
+        wide: 1300px,
+        large: 1500px
+);
+
+//$navbar-default-bg: #312312;
+//$light-orange: #ff8c00;
+//$navbar-default-color: $light-orange;
+$grid-gutter-width: 20px;
+
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+@import "utils/mq";
+@import "utils/mixins";
+@import "lightbox";
+
+@import url('https://use.fontawesome.com/cf7b1e4505.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin,latin-ext');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto:200,400,300,500,700,900&subset=latin,latin-ext);
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&subset=latin-ext');
+
+* {
+  @include box-sizing(border-box);
+  outline: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Montserrat;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
