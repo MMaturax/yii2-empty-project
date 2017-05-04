@@ -21,6 +21,9 @@ class AppAsset extends AssetBundle
         'assets/css/site.css',
     ];
     public $js = [
+        'assets/js/jquery.min.js',
+        'assets/js/bootstrap.min.js',
+        'assets/js/bootstrap-lightbox.js',
     ];
     public $depends = [
         //'yii\web\YiiAsset',
