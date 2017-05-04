@@ -1,5 +1,5 @@
 {
-    "name": "yiisoft/yii2-app-basic",
+    "name": "YiiEmpty Project",
     "description": "Yii 2 Basic Project Template",
     "keywords": ["yii2", "framework", "basic", "project template"],
     "homepage": "http://www.yiiframework.com/",
@@ -44,18 +44,18 @@
         "yii\\composer\\Installer::postCreateProject": {
             "setPermission": [
                 {
-                    "runtime": "0777",
-                    "web/assets": "0777",
-                    "yii": "0755"
+                    "_app/runtime": "0777",
+                    "_app/web/assets": "0777",
+                    "_app/yii": "0755"
                 }
             ],
             "generateCookieValidationKey": [
-                "config/web.php"
+                "_app/config/web.php"
             ]
         },
         "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
+            "npm-asset-library": "_app/vendor/npm",
+            "bower-asset-library": "_app/vendor/bower"
         }
     }
 }
