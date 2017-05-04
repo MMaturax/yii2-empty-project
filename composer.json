@@ -1,6 +1,6 @@
 {
     "name": "yii2-empty-project",
-    "description": "Yii 2 Basic Project Template",
+    "description": "Yii 2 Basic Empty Project Template",
     "keywords": ["yii2", "framework", "basic", "project template"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
