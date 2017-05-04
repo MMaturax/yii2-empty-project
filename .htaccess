@@ -1,8 +1,13 @@
 RewriteEngine on
-            
-# if a directory or a file exists, use it directly
+
+# hide files and folders
+RedirectMatch 404 /_app
+RedirectMatch 404 /\.git
+RedirectMatch 404 /composer\.
+RedirectMatch 404 /.bowerrc
+
+# If a directory or a file exists, use the request directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-
-# otherwise forward it to index.php
+# Otherwise forward the request to index.php
 RewriteRule . index.php
