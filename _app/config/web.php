@@ -3,13 +3,13 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'bindle',
+    'id' => 'yourappid',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'gRw_owUwlGe-Lt2CsHFv8IQomX825ZrK',
+            'cookieValidationKey' => '',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -17,7 +17,7 @@ $config = [
         'user' => [
             'identityClass' => 'app\models\Users',
             'enableAutoLogin' => true,
-            'loginUrl' => 'guest/signin',
+            'loginUrl' => 'site/login',
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -94,13 +94,13 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
-         'allowedIPs' => ['88.242.38.249','78.188.214.150', '::1'],
+         'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-         'allowedIPs' => ['88.242.38.249','78.188.214.150', '::1'],
+         'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
 
