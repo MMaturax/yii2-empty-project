@@ -74,7 +74,7 @@ $config = [
                 'yii\web\JqueryAsset' => [
                     'sourcePath' => null,   // do not publish the bundle
                     'js' => [
-                        '//code.jquery.com/jquery-1.10.2.min.js',  // use custom jquery
+                        '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js',
                     ]
                 ],
             ],
