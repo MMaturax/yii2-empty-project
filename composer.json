@@ -47,8 +47,7 @@
                     "_app/runtime": "0777",
                     "_app/yii": "0755",
                     "assets": "0755",
-                    "uploads": "0777",
-                    "index.php": "0644"
+                    "uploads": "0777"
                 }
             ],
             "generateCookieValidationKey": [
