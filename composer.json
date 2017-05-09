@@ -12,7 +12,7 @@
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
@@ -30,7 +30,6 @@
         "yiisoft/yii2-faker": "*",
         "codeception/specify": "*",
         "codeception/verify": "*"
-        //"yiisoft/yii2-imagine": "~2.0.0"
     },
     "config": {
         "vendor-dir": "_app/vendor",
