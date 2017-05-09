@@ -7,6 +7,8 @@ use yii\widgets\Menu;
 
 $this->title = 'Yii2 Basic Empty Project';
 
+
+
 ?>
 <?= Menu::widget([
     'encodeLabels' => false,
@@ -18,3 +20,4 @@ $this->title = 'Yii2 Basic Empty Project';
     ]
 ]) ?>
 
+<a href="<?=Url::to()?>"></a>

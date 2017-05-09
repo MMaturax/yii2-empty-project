@@ -12,7 +12,7 @@
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
@@ -21,6 +21,7 @@
         "yiisoft/yii2-swiftmailer": "*",
         "richardfan1126/yii2-js-register": "*",
         "tpmanc/yii2-imagick": "*"
+
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -29,6 +30,7 @@
         "yiisoft/yii2-faker": "*",
         "codeception/specify": "*",
         "codeception/verify": "*"
+        //"yiisoft/yii2-imagine": "~2.0.0"
     },
     "config": {
         "vendor-dir": "_app/vendor",
@@ -46,7 +48,8 @@
                     "_app/runtime": "0777",
                     "_app/yii": "0755",
                     "assets": "0755",
-                    "uploads": "0777"
+                    "uploads": "0777",
+                    "index.php": "0644"
                 }
             ],
             "generateCookieValidationKey": [
