@@ -20,4 +20,3 @@ $this->title = 'Yii2 Basic Empty Project';
     ]
 ]) ?>
 
-<a href="<?=Url::to()?>"></a>
