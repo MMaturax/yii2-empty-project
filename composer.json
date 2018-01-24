@@ -33,9 +33,6 @@
     },
     "config": {
         "vendor-dir": "_app/vendor",
-        "fxp-asset": {
-            "enabled": false
-        },
         "process-timeout": 1800
     },
     "scripts": {
