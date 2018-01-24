@@ -33,11 +33,18 @@
     },
     "config": {
         "vendor-dir": "_app/vendor",
+        "fxp-asset": {
+            "enabled": false
+        },
         "process-timeout": 1800
     },
     "scripts": {
+        "post-install-cmd": [
+            "yii\\composer\\Installer::postInstall"
+        ],
         "post-create-project-cmd": [
-            "yii\\composer\\Installer::postCreateProject"
+            "yii\\composer\\Installer::postCreateProject",
+            "yii\\composer\\Installer::postInstall"
         ]
     },
     "extra": {
